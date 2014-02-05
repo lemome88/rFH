@@ -1,7 +1,6 @@
 library(ggplot2) #Nueva libreria requerida
 ##Metodo principal
 kdensity<-function(sample,method,n=200,b=length(sample)^0.2){
-  #Fijar la zona en la que calcular la densidad
  m=min(sample)-2*b
  M=max(sample)+2*b
  x.v=seq(from=m,to=M,by=(M-m)/n)
